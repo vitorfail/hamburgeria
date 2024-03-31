@@ -1,31 +1,23 @@
-import React, {Component} from "react";
+import React, {Component, useEffect, useState} from "react";
 import Axios from "../../Axios.js";
 import './ContasdoMes.css';
-import {Link}from 'react-router-dom';
-export default class ContasdoMes extends Component{
-    constructor(){
-        super()
-        this.state= {
-            lista_contas: []
-            
-        }
-        this.mudar_mes = this.mudar_mes.bind(this);
-        this.atualiza = this.atualiza.bind(this);
-        this.atualizar_conta = this.atualizar_conta.bind(this);
-    }
-    componentDidMount() {
+import Link from "next/link.js";
+export default function ContasdoMes(){
+    const [lista_contas, setlista_contas] = useState([])
+
+    uesEffect(() => {
         window.addEventListener('load', this.atualiza);
         var data= new Date();
         var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
         window.addEventListener('load', this.mudar_mes(meses[data.getMonth()]));
-    }
-    atualiza(){
+    },[])
+    function atualiza(){
         var seletor = document.querySelector('.meses');
         var data= new Date();
         var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
         seletor.value = meses[data.getMonth()];
     }
-    checar_mes(mes){
+    function checar_mes(mes){
         if(mes.length === 1){
             return "0" + mes;
         }
@@ -33,7 +25,7 @@ export default class ContasdoMes extends Component{
             return mes;
         }
     }
-    mudar_mes(mes){
+    function mudar_mes(mes){
         var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
         var data = new Date();
         var data_hoje = data.getFullYear() + '-'+ (data.getMonth()+1) + '-' + data.getDate();
@@ -48,7 +40,7 @@ export default class ContasdoMes extends Component{
                 res.data.data[2].length === 0 && res.data.data[3].length === 0 &&
                 res.data.data[4].length === 0 && res.data.data[5].length === 0 &&
                 res.data.data[6].length === 0){
-                this.setState({ lista_contas:<div className="nenhum"><h3 className="negativo">Nenhuma conta este mês</h3></div> })
+                setlista_contas([<div className="nenhum"><h3 className="negativo">Nenhuma conta este mês</h3></div>])
             }
             else{
                 var ir = [];
@@ -95,7 +87,7 @@ export default class ContasdoMes extends Component{
             }
         })
     }
-    atualizar_conta(e, check){
+    function atualizar_conta(e, check){
         Axios.post('api/atualizarconta', {
             id: e,
             situacao: String(check)
@@ -111,34 +103,43 @@ export default class ContasdoMes extends Component{
             }
         })
     }
-    render(){
-        return(
-            <div className="notific">
-                <div className="contas_do_mes">
-                    <h2>Contas do mês</h2>
-                    <select className="meses"  onChange={(event) => this.mudar_mes(event.target.value)}>
-                        <option value='Janeiro'>Janeiro</option>
-                        <option value='Fevereiro'>Fevereiro</option>
-                        <option value='Março'>Março</option>
-                        <option value='Abril'>Abril</option>
-                        <option value='Maio'>Maio</option>
-                        <option value='Junho'>Junho</option>
-                        <option value='Julho'>Julho</option>
-                        <option value='Agosto'>Agosto</option>
-                        <option value='Setembro'>Setembro</option>
-                        <option value='Outubro'>Outubro</option>
-                        <option value='Novembro'>Novembro</option>
-                        <option value='Dezembro'>Dezembro</option>
-                    </select>
-                    <Link className="ver_todas" to='/contas'>Ver Todas</Link>
-                </div>
-                <div className="t_contas">
-                                        
-                </div>
-                <div className="lista_contas">
-                    {this.state.lista_contas}
-                </div>
+    return(
+        <div className="notific">
+            <div className="contas_do_mes">
+                <h2>Contas do mês</h2>
+                <select className="meses"  onChange={(event) => this.mudar_mes(event.target.value)}>
+                    <option value='Janeiro'>Janeiro</option>
+                    <option value='Fevereiro'>Fevereiro</option>
+                    <option value='Março'>Março</option>
+                    <option value='Abril'>Abril</option>
+                    <option value='Maio'>Maio</option>
+                    <option value='Junho'>Junho</option>
+                    <option value='Julho'>Julho</option>
+                    <option value='Agosto'>Agosto</option>
+                    <option value='Setembro'>Setembro</option>
+                    <option value='Outubro'>Outubro</option>
+                    <option value='Novembro'>Novembro</option>
+                    <option value='Dezembro'>Dezembro</option>
+                </select>
+                <Link className="ver_todas" href='/contas'>Ver Todas</Link>
             </div>
-        )
-    }
+            <div className="t_contas">
+                                    
+            </div>
+            <div className="lista_contas">
+                {lista_contas.map((item, key) =>{
+                    if(item.hasOwnProperty("valor")){
+                        return    <div className="titulos_contas"> 
+                                <h3>{item.nome}</h3> 
+                                <h3>R$ {item.valor}</h3> 
+                                <h3  className="pago">Pago</h3> 
+                            </div>
+                    }
+                    else{
+                        return item
+                    }
+                })}
+            </div>
+        </div>
+    )
 } 

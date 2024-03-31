@@ -1,5 +1,5 @@
-
-import React, {Component, useEffect, useState} from 'react';
+"use client";
+import React, { useEffect, useState} from 'react';
 import Barralateral from '../components/Barralateral/Barralateral';
 import BarradePesquisa from '../components/BarradePesquisa/BarradePesquisa';
 import Blocos from '../components/Blocos/Blocos';

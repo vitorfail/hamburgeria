@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import './Coockie.css'
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 import Biscoito from '../.././icones/coockie.png'
 import Axios from '../../Axios';
 import Exit from '../../Exit';
@@ -41,7 +41,7 @@ const  Coockie = (props) => {
                                     </div>
                                     <div className="opcoes" >
                                         <div className="link" >
-                                            <Link className="l" to='/politicas'>Políticas de Privacidade</Link>
+                                            <Link className="l" href='/politicas'>Políticas de Privacidade</Link>
                                         </div>
                                         <div className="botoes">
                                             <button className="recusar" onClick={() => Fechar()} >Recusar</button>

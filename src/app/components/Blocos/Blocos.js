@@ -1,5 +1,5 @@
 import React, {Component, useEffect, useState} from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link.js";
 import Axios from '../../Axios.js';
 import '../Blocos/Blocos.css';
 import Exit from "../../Exit.js";
@@ -8,8 +8,8 @@ export default function Blocos({props}){
     var despesas_dia = props.despesas_dia
     var valor_mes = props.valor_mes
     var despesas_mes = props.despesas_mes
-    const [data,setdata] = useState("Dia, mes, ano")
-    const [hora,sethora] = useState("00:00")
+    const [data_,setdata] = useState("Dia, mes, ano")
+    const [hora_,sethora] = useState("00:00")
 
     useEffect(() => {
         data();
@@ -37,7 +37,7 @@ export default function Blocos({props}){
     return(
         <div className="cards">
             <div className="card" >
-                <Link className='link' to='/pesquisa/todos'></Link>
+                <Link className='link' href='/pesquisa/todos'></Link>
                 <div className="box" >
                     <h1 id='numero-clientes'>{valor_dia}</h1>
                     <h3>Receita do dia</h3>
@@ -46,7 +46,7 @@ export default function Blocos({props}){
                 </div>
             </div>
             <div className="card">
-                <Link className='link' to='/aniversariantes'></Link>
+                <Link className='link' href='/aniversariantes'></Link>
                 <div className="box">
                     <h1 id="aniver">{valor_mes}</h1>
                     <h3>Receita do mês</h3>
@@ -55,7 +55,7 @@ export default function Blocos({props}){
                 </div>
             </div>
             <div className="card"  >
-                <Link className='link' to='/pagamentos'></Link>
+                <Link className='link' href='/pagamentos'></Link>
                 <div className="box">
                     <h1 className='valormes'>{despesas_dia}</h1>
                     <h3>Despesas do dia</h3>
@@ -65,8 +65,8 @@ export default function Blocos({props}){
             </div>
             <div className="card-hora">
                 <div className="box">
-                    <h1 className='hora'>{hora}</h1>
-                    <h3 className='dia'>{data}</h3>
+                    <h1 className='hora'>{hora_}</h1>
+                    <h3 className='dia'>{data_}</h3>
                 </div>
             </div>
         </div>

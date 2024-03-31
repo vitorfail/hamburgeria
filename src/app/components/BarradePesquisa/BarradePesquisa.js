@@ -11,8 +11,8 @@ import '../BarradePesquisa/BarradePesquisa.css';
 import '../BarradePesquisa/Popup-conta.css';
 import Axios from '../../Axios.js';
 import Conta  from '../../icones/divida.png'
-import { useHistory } from 'react-router-dom';
-import {Link} from 'react-router-dom';
+import { useRouter } from 'next/router';
+import {Link} from 'next/link';
 
 
 function BarradePesquisa(){
@@ -26,7 +26,7 @@ function BarradePesquisa(){
     const [menu, setmenu] = useState('balao');
     const [preencha, setpreencha] = useState('preencha');
     const [titulo, settitulo] = useState("");
-    const history = useHistory();
+    const history = useRouter();
 
 
     function pegar_nome(){
@@ -116,11 +116,11 @@ function BarradePesquisa(){
     return(
         <div className="cabecalho">
             <div className={menu}>
-                <Link className='link' to='/graficos' ><img src={Planilha} alt="planilha"/>Planilha</Link>
-                <Link className='link'  to='/cadastro'><img src={Cadastro} alt="cadastro"/>Cadastro</Link>
-                <Link className='link'  to='/financeiro'><img src={DRE} alt="dre"/>DRE</Link>
-                <Link className='link'to='/ajuda'  ><img src={Ajuda} alt="ajuda"/>Ajuda</Link>
-                <Link className='link' to='/'  >Home</Link>
+                <Link className='link' href='/graficos' ><img src={Planilha} alt="planilha"/>Planilha</Link>
+                <Link className='link'  href='/cadastro'><img src={Cadastro} alt="cadastro"/>Cadastro</Link>
+                <Link className='link'  href='/financeiro'><img src={DRE} alt="dre"/>DRE</Link>
+                <Link className='link'href='/ajuda'  ><img src={Ajuda} alt="ajuda"/>Ajuda</Link>
+                <Link className='link' href='/'  >Home</Link>
                 <a className='link' onClick={() => logout()} to='/' href="/#"><img src={Sair}  alt="ajuda"/>Sair</a>
             </div>
             <div className="barra_de_pesquisa">

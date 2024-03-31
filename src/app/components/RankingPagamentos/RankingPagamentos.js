@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Axios from "../../Axios.js";
 import rank from '../../icones/rank.png';
 import './RankingPagamentos.css';
-import { Link } from "react-router-dom";
+import { Link } from "next/link.js";
 export default class RankingPagamentos extends Component{
     
     constructor(props){
@@ -65,7 +65,7 @@ export default class RankingPagamentos extends Component{
                 <div className="clientes-recentes">
                     <h2>Ranking de pagamento</h2>
                     <img src={rank} alt="Ranking"/>
-                    <Link className="ver_todos" to="/rankingsp">Ver todos</Link>
+                    <Link className="ver_todos" href="/rankingsp">Ver todos</Link>
                 </div>
                 <div className="titulos_tabela">
                     <h3>Nomes</h3>
