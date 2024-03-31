@@ -1,0 +1,112 @@
+.barra .conteudo .cards{
+    padding: 20px 15px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra .conteudo .cards .card{
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.barra .conteudo .cards .card .link{
+    position: absolute;
+    width: 211px;
+    height: 131px;
+}
+.barra .conteudo .cards .card-hora {
+    width: 250px;
+    height: 150px;
+    background: var(--vermelho);
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.barra .conteudo .cards .card-hora:hover{
+    cursor:pointer;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 50px #9ecaed;
+}
+.barra .conteudo .cards .card:hover{
+    cursor:pointer;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 50px #9ecaed;
+}
+.barra .conteudo .cards .card .box{
+    padding: 10px;
+}
+.barra .conteudo .cards .card .icone{
+    width:72px;
+    height:64px;
+    margin-right:10px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+.icone.clientes{
+    background-image: var(--icone--clientes);
+    background-repeat: no-repeat;
+}
+.icone.aniver{
+    background-image: var(--icone--aniversariantes);
+    background-repeat: no-repeat;
+}
+.icone.pagamentos{
+    background-image: var(--icone--pagamentos);
+    background-repeat: no-repeat;
+}
+.barra .conteudo .cards .card .box h3{
+    color: rgb(131, 131, 131);
+}
+.barra .conteudo .cards .card .box h1{
+    color: rgb(82, 80, 82);
+    font-size: 22px;
+}
+.box .hora{
+    justify-content: center;
+    display: flex;
+    font-size: 45px; 
+    color: white;
+}
+.box .dia{
+    color: white;
+}
+@media screen and (max-width: 640px){
+    .barra .conteudo .cards .card .icone {
+        background-size: 20px;
+    }
+    .barra .conteudo .cards .card .link {
+        width: 150px;
+    }
+    .barra .conteudo .cards .card .box h1{
+        font-size: 18px;
+    }
+    .barra .conteudo .cards .card .box h3{
+        font-size: 15px;
+    }
+    .barra .conteudo .cards .card{
+        width: 150px;
+        height: 110px;
+    }
+    .barra .conteudo .cards .card-hora{
+        width: 150px;
+        height: 110px;
+    }
+    .barra .conteudo .cards .card .icone img{
+        width: 64px;
+        height: 64px;
+    }
+    .barra .conteudo .cards{
+        justify-content: center;
+    }   
+}

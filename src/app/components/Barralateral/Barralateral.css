@@ -1,0 +1,107 @@
+.barralateral .link{
+    list-style: none;
+}
+.barralateral{
+    position: fixed;
+    background: linear-gradient(var(--barra--lateral), var(--barra--lateral)), url('../../icones/download.jpg');
+    background-repeat: no-repeat;
+    background-size: 1020px 100%;
+    width: 15vw;
+    min-height: 100vh;
+}
+.barralateral .nome_titulo{
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barralateral .nome_titulo .link{
+    visibility:hidden;
+    position: relative;
+}
+.barralateral .nome_titulo .link::before{
+    visibility: visible;
+    padding: 5px 19px;
+    content: 'Forwin';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.barralateral ul .link{
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-style:inherit;
+    padding: 10px 19px;
+    display: flex;
+    align-items: center;
+    color: ivory;
+    cursor: pointer;
+}
+.barralateral ul .link:hover{
+    background-color: ivory;
+    color: var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 24px 0px 0px 24px;
+	-moz-border-radius: 24px 0px 0px 24px;
+	-webkit-border-radius: 24px 0px 0px 24px;
+}
+.barralateral ul .link.focus{
+    background: rgb(224, 224, 224);
+    color: var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 24px 0px 0px 24px;
+	-moz-border-radius: 24px 0px 0px 24px;
+	-webkit-border-radius: 24px 0px 0px 24px;
+}
+.barralateral ul .busines{
+    background-color: ivory;
+    color: var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 24px 0px 0px 24px;
+	-moz-border-radius: 24px 0px 0px 24px;
+	-webkit-border-radius: 24px 0px 0px 24px;
+}
+.barralateral ul .planilha{
+    color: var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 24px 0px 0px 24px;
+	-moz-border-radius: 24px 0px 0px 24px;
+	-webkit-border-radius: 24px 0px 0px 24px;
+}
+.barralateral ul .cad1{
+    background-color: ivory;
+    color: var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 24px 0px 0px 24px;
+	-moz-border-radius: 24px 0px 0px 24px;
+	-webkit-border-radius: 24px 0px 0px 24px;
+}
+@media screen and (max-width: 940px){
+    .barralateral .link span{
+        display: none;
+    }
+    .barralateral{
+        align-items: center;
+    }
+    .barralateral .link img{
+        width: 37px;
+        height: 37px;
+    }
+}

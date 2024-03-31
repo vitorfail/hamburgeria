@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+    font-display: block;
+    
+}
+.clientes_achados{
+    min-height: 100vh;
+    background: white;
+    flex: 5;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.clientes_achados .titulo_pesquisa{
+    background: var(--vermelho);
+    display: flex;
+    border-bottom: 2px solid rgb(83, 83, 83) ;
+}
+.titulo_pesquisa h1{
+    font-size: 25px;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 5px 39.5px;
+}
+.clientes_achados .indexador{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientes_achados .indexador p{
+    font-weight: 600;
+}
+.clientes_achados .indexador img{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.clientes_achados .indexador :hover{
+    background-color: #ce3940;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.enc{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(224, 224, 224);
+    -webkit-border-bottom: 3px solid rgb(224, 224, 224);
+    -moz-border-bottom: 3px solid rgb(224, 224, 224);
+}
+.enc.p{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(224, 224, 224);
+    -webkit-border-bottom: 3px solid rgb(224, 224, 224);
+    -moz-border-bottom: 3px solid rgb(224, 224, 224);
+}
+.zap{
+    width: 25px;
+    height: 25px;
+}
+.enc:hover{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 35px #9ecaed;
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+}
+.enc .n{
+    font-weight: 600;
+    width: 220px;
+    color: rgb(82, 80, 82);
+    font-size: 16px;
+}
+.enc .v{
+    font-weight: 600;
+    width: 220px;
+    font-size: 16px;
+    background: #48AC43;
+    color: white;
+    width: 220px;
+}
+.enc .email_caixa{
+    width: 172px;
+    margin-right: 7px;
+}
+.enc #e{
+    font-weight: 600;
+    color: rgb(82, 80, 82);
+    font-size: 16px;
+    width: 118px;
+    max-width: 218px;
+    margin-left: 50px;
+    margin-right:10px;
+}
+.enc .tel{
+    font-weight: 600;
+    color: rgb(82, 80, 82);
+    font-size: 16px;
+    width: 220px;
+    padding-left: 20px;
+}
+.enc .sex {
+    font-weight: 600;
+    color: rgb(82, 80, 82);
+    font-size: 16px;
+    width: 30px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.enc .excluir{
+    margin-left: 16px;
+    display: flex;
+    background: var(--vermelho);
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    justify-content: center;
+}
+.enc .excluir:hover{
+    background-color: ivory;
+    color: var(--vermelho);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--vermelho);
+    -moz-border: 2px solid var(--vermelho);
+    -webkit-border:  2px solid var(--vermelho);
+    cursor: pointer;
+}
+.enc .editar{
+    margin-left: 16px;
+    display: flex;
+    background: var(--salvar--info);
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    justify-content: center;
+}
+.enc .falar{
+    margin-left: 16px;
+    display: flex;
+    background: var(--salvar--info);
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    justify-content: center;
+}
+.enc .falar:hover{
+    background-color: ivory;
+    color: var(--salvar--info);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--salvar--info);
+    -moz-border: 2px solid var(--salvar--info);
+    -webkit-border:  2px solid var(--salvar--info);
+    cursor: pointer;
+}
+.enc .editar:hover{
+    background-color: ivory;
+    color: var(--salvar--info);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--salvar--info);
+    -moz-border: 2px solid var(--salvar--info);
+    -webkit-border:  2px solid var(--salvar--info);
+    cursor: pointer;
+}
+.enc .pag{
+    margin-left: 16px;
+    display: flex;
+    background: var(--pagamentos);
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    justify-content: center;
+}
+.enc .pag:hover{
+    background-color: ivory;
+    color: var(--pagamentos);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--pagamentos);
+    -moz-border: 2px solid var(--pagamentos);
+      -webkit-border:  2px solid var(--pagamentos);
+    cursor: pointer;
+}
+.enc h3{
+    font-style: inherit;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.enc .quadro_botoes{
+    display: flex;
+}
+
+/*////////////////////////////////////////////////*/
+/*Modal pagamentos*/
+.modal-container2 .modal .pag-conteiner{
+    border-top: 2px solid rgb(44, 44, 44);
+    height: 290px;
+    display: block;
+}
+.modal-container2 .modal .pag-list{
+    height: 240px;
+    overflow-y: auto;
+    display: block;
+}
+
+
+@media screen and (max-width: 640px) {
+    .enc{
+        justify-content: center;
+    }
+    .enc .falar{
+        margin-left: 1px;
+        width: 65px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .enc .excluir{
+        margin-left: 1px;
+        width: 51px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .enc .editar{
+        margin-left: 1px;
+        width: 45px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .enc .pag{
+        margin-left: 1px;
+        width: 85px;
+        height: 25px;
+        font-size: 15px;
+    }
+    .enc #e {
+        width: auto;
+        font-weight: 100;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .enc .email_caixa {
+        width: 211px;
+        margin-right: 0px;
+    }
+    .enc .n {
+        font-weight: 100;
+        font-weight: 900;
+    }
+    .enc .tel {
+        font-weight: 100;
+        padding-left: 0px;
+    }
+    .enc .sex {
+        font-weight: 100;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 241px;
+    }
+    .enc h3{
+        font-size: 15px;
+    }
+}
+  
+  

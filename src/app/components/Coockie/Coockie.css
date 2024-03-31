@@ -1,0 +1,125 @@
+.coockie{
+    right: 1%;
+    bottom: 4%;
+    position:fixed;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.329);
+    background: white;
+    z-index: 50000;
+    height: 170px;
+    width: 550px;
+    display: none;
+}
+.coockie.mostrar{
+    display: block;
+}
+.coockie .politica{
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.coockie .politica p{
+    font-size: 18px;
+    display: flex;
+    font-weight: 500;
+    color: black;
+}
+.coockie .politica img{
+    display: flex;
+    height: 25px;
+    width: 25px;
+}
+.coockie .texto{
+    padding-left: 10px;
+}
+.coockie .texto p{
+    font-size: 18px;
+}
+
+.coockie .opcoes{
+    padding-top: 19px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.coockie .opcoes .link{
+    display: flex;
+}
+.coockie .opcoes .link .l{
+    padding: 12px;
+    font-weight: 500;
+    color: rgb(33, 33, 212);
+}
+.coockie .opcoes .botoes{
+    padding-left: 10px;
+    display: flex;
+}
+.coockie .opcoes .botoes button{
+    font-size: 16px;
+    width: 150px;
+    background: none;
+	color: inherit;
+	border: none;
+    margin-left: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+.coockie .opcoes .botoes .recusar{
+    border: 1px solid rgb(25, 29, 224);
+    font-weight: 500;
+    background: rgb(214, 214, 214);
+    color: rgb(25, 29, 224);
+}
+.coockie .opcoes .botoes .recusar:hover{
+    border: 1px solid rgb(25, 29, 224);
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    color: rgb(8, 12, 253);
+}
+.coockie .opcoes .botoes .aceitar{
+    border: 1px solid rgb(25, 29, 224);
+    font-weight: 500;
+    background: rgb(25, 29, 224);
+    color: rgb(255, 255, 255);
+}
+.coockie .opcoes .botoes .aceitar:hover{
+    border: 1px solid rgb(25, 29, 224);
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    color: rgb(8, 12, 253);
+}
+@media screen and (max-width:640px) {
+    .coockie{
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+    }
+    .coockie .politica{
+        padding: 0;
+    }
+    .coockie .opcoes{
+        padding: 0;
+    }
+    .coockie .texto p{
+        font-size: 16px;
+    }
+    .coockie .politica p{
+        padding-left: 8px;
+        font-size: 16px
+    }
+    .coockie .opcoes .link .l{
+        padding: 7px;
+        font-size: 16px;
+    }
+    .coockie .politica img{
+        margin-left: 7px;
+        margin-top: 7px;
+    }
+    .coockie .politica p{
+        margin-top: 7px;
+    }
+}
+
+
+

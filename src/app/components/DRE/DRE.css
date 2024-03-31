@@ -1,0 +1,116 @@
+.titulo_pesquisa h1{
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px 39.5px;
+}
+.titulo_pesquisa select{
+      font-size: 25px;
+      background: var(--vermelho);
+      color: #ffffff;
+      border: none;
+      padding: 1px 5px;
+      font-weight: bold;
+}
+.dre {
+    min-height: 72vh;
+    background: white;
+    flex: 5;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.dre .titulo_pesquisa{
+    background: var(--vermelho);
+    display: flex;
+    border-bottom: 4px solid rgb(224, 224, 224) ;
+}
+.dre .titulo_dre{
+    display: flex;
+    background: #a5a5a5;
+    border-bottom: 4px solid rgb(224, 224, 224) ;
+}
+.dre .titulo_dre2{
+    display: flex;
+    background: #ffffff;
+    border-bottom: 4px solid rgb(224, 224, 224) ;
+  
+}
+.dre .resultado_negativo_dre{
+    display: flex;
+    background: #a53434;
+    border-bottom: 4px solid rgb(224, 224, 224) ;
+}
+.dre .resultado_positivo_dre{
+    display: flex;
+    background: #00bb38;
+    border-bottom: 4px solid rgb(224, 224, 224) ;
+}
+.saida_rs{
+    font-size: 20px;
+    width:405px;
+    color: var(--vermelho);
+    padding: 5px 15px;
+}
+.saida_rs2{
+    font-size: 20px;
+    color: var(--vermelho);
+    padding: 5px 15px;
+    border-left: 4px solid rgb(224, 224, 224);
+}
+
+
+.valor_rs{
+    border-left: 4px solid rgb(224, 224, 224);
+  }
+.resultado_rs{
+    font-size: 20px;
+    width:405px;
+    color: #252525;
+    padding: 5px 15px;
+}
+.resultado_rs2{
+    font-size: 20px;
+    color: #252525;
+    padding: 5px 15px;
+    border-left: 4px solid rgb(224, 224, 224);
+}
+.entrada_rs{
+    font-size: 20px;
+    width:405px;
+    color: #252525;
+    padding: 5px 15px;
+}
+.entrada_rs2{
+    font-size: 20px;
+    color: #252525;
+    padding: 5px 15px;
+    border-left: 4px solid rgb(224, 224, 224);
+}
+@media screen and (max-width: 640px){
+    .entrada_rs{
+        width: 225px;
+    }
+    .entrada_rs2{
+        width: 111px;
+    }
+    .titulo_pesquisa select {
+        width: 85px;
+        padding: 1px 0px;
+        font-size: 15px;
+    }
+    .saida_rs{
+        width: 206px;
+    }
+    .titulo_pesquisa h1 {
+        font-size: 15px;
+    }
+    .resultado_rs{
+        width: 111px;
+    }
+    .dre {
+        width: 48vw;
+    }
+    .dre h1{
+        padding: 5px 3px;
+        font-size: 16px;
+    }
+}

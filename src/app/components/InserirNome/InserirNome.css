@@ -1,0 +1,182 @@
+.nameclatura{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 4500;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.nameclatura.mostrar{
+    display: flex;
+}
+.nameclatura .modal{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 30vw;
+    height: 333px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.nameclatura .modal .caixa{
+    height: 209px;
+    padding: 19px;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nameclatura .modal .mudar{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgb(21, 103, 211);
+    color: white;
+    font-size: 20px;
+    width: 205vw;
+    height: 40px;
+    margin: 15px 5px;
+    display: flex;
+}
+.nameclatura .modal .mudar:hover{
+    background: white;
+    color: rgb(21, 103, 211);
+    border: 2px solid rgb(21, 103, 211);
+    cursor: pointer;
+}
+.nameclatura .modal .fechar_nome{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    width: 205vw;
+    height: 40px;
+    margin: 15px 5px;
+    display: flex;
+}
+.nameclatura .modal .fechar_nome:hover{
+    background: white;
+    color: var(--mudar);
+    border: 2px solid var(--mudar);
+    cursor: pointer;
+}
+.nameclatura .modal .menu_nome{
+    width: 250px;
+    display: flex;
+}
+.nameclatura .modal .mudar-nome{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 205px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(113, 160, 168, 0.308);
+    color: rgb(114, 114, 114);
+    margin-top: 15px;
+    display: flex;
+}
+.nameclatura .modal input[name=tema]{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+.nameclatura .modal input[name=tema]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+.nameclatura .modal input[name=tema]:checked::before{
+    transform: scale(1);
+}
+.nameclatura .modal input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.nameclatura .modal .nickname{
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--pagamentos) ;
+    width: 90px;
+    height: 90px;
+    color: white;
+    border-radius: 50px;
+}
+.nameclatura .modal::-webkit-scrollbar{
+    border-radius: 10px;
+  width: 7px;
+  background-color: #F5F5F5;
+}
+.nameclatura .modal::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: var(--vermelho);
+}
+.nameclatura .modal::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: #F5F5F5;
+}
+.escolha-tema{
+    margin-top: 10px;
+    display: flex;
+    min-width: 277px;
+    width: 287px;
+    flex-wrap: wrap;
+}
+.escolha-tema h2{
+    width: 30px;
+    height: 30px;
+}
+.escolha-tema .padrao{
+    display: flex;
+    background: crimson;
+    color: crimson;
+}
+.escolha-tema .azul{
+    display: flex;
+    background: rgb(37, 52, 255);
+    color: rgb(37, 52, 255);
+}
+.escolha-tema .roxo{
+    display: flex;
+    background: rgb(66, 0, 219);
+    color: rgb(66, 0, 219);
+}
+.escolha-tema .laranja{
+    display: flex;
+    background: rgb(219, 117, 0);
+    color: rgb(219, 117, 0);
+}
+.escolha-tema .verde{
+    display: flex;
+    background: rgb(3, 138, 26);
+    color: rgb(3, 138, 26);
+}
+.escolha-tema p{
+    margin-left: 5px;
+    margin-right: -5px;
+    width: 79px;
+    display: flex;
+}
+
+@media screen and (max-width: 640px) {
+    .nameclatura .modal{
+        width: 109vw;
+    }
+}

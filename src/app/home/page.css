@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-display: block;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto";
+}
+:root{
+    --vermelho:crimson;
+    --fundo: #F5F5F5;
+    --cor--barra:#D62929;
+    --letra--padrao:white;
+    --botao--sim:rgb(226, 55, 55);
+    --preencha--borda:rgb(216, 36, 36);
+    --preencha--cor:rgba(236, 21, 21, 0.322);
+    --salvar--info:rgb(2, 158, 10);
+    --botao--sim--popup: rgb(36, 63, 216);
+    --barra--lateral: rgba(211, 9, 42, 0.438);
+    --preferencia--de--pagamento: rgb(1, 153, 52);
+    --cor--da--barra: white;
+    --pagamentos:rgb(2, 124, 172);
+    --icone--clientes: url('../icones/blocos/students.png');
+    --icone--aniversariantes: url('../icones/blocos/instituicao2.png');
+    --icone--pagamentos: url('../icones/blocos/pagamento2.png');
+}
+.tema-azul:root{
+    --vermelho:rgb(20, 67, 220);
+    --fundo: #F5F5F5;
+    --cor--barra:#0d11eb;
+    --letra--padrao:white;
+    --botao--sim:rgb(55, 95, 226);
+    --preencha--borda:rgb(216, 36, 36);
+    --preencha--cor:rgba(236, 21, 21, 0.322);
+    --salvar--info:rgb(172, 126, 0);
+    --botao--sim--popup: rgb(36, 63, 216);
+    --barra--lateral: rgb(47, 45, 184, 0.5);
+    --preferencia--de--pagamento: rgb(1, 153, 52);
+    --cor--da--barra: white;
+    --pagamentos:rgb(2, 124, 172);
+    --icone--clientes: url('../icones/blocos/students-azul.png');
+    --icone--aniversariantes: url('../icones/blocos/instituicao2-azul.png');
+    --icone--pagamentos: url('../icones/blocos/pagamento2-azul.png');
+}
+.tema-roxo:root{
+    --vermelho:rgb(107, 20, 220);
+    --fundo: #F5F5F5;
+    --cor--barra:#4e0a8f;
+    --letra--padrao:white;
+    --botao--sim:rgb(111, 71, 255);
+    --preencha--borda:rgb(216, 36, 36);
+    --preencha--cor:rgba(236, 21, 21, 0.322);
+    --salvar--info:rgb(0, 166, 172);
+    --botao--sim--popup: rgb(12, 144, 177);
+    --barra--lateral: rgb(98, 23, 160, 0.5);
+    --preferencia--de--pagamento: rgb(2, 167, 57);
+    --cor--da--barra: white;
+    --pagamentos:rgb(2, 124, 172);
+    --icone--clientes: url('../icones/blocos/students-roxo.png');
+    --icone--aniversariantes: url('../icones/blocos/instituicao2-roxo.png');
+    --icone--pagamentos: url('../icones/blocos/pagamento2-roxo.png');
+}
+.tema-laranja:root{
+    --vermelho:rgb(192, 132, 3);
+    --fundo: #F5F5F5;
+    --cor--barra:#ca7c05;
+    --letra--padrao:white;
+    --botao--sim:rgb(226, 94, 17);
+    --preencha--borda:rgb(216, 36, 36);
+    --preencha--cor:rgba(236, 21, 21, 0.322);
+    --salvar--info:rgb(172, 0, 14);
+    --botao--sim--popup: rgb(177, 12, 40);
+    --barra--lateral: rgba(177, 104, 45, 0.5);
+    --preferencia--de--pagamento: rgb(2, 167, 57);
+    --cor--da--barra: white;
+    --pagamentos:rgb(2, 124, 172);
+    --icone--clientes: url('../icones/blocos/students-laranja.png');
+    --icone--aniversariantes: url('../icones/blocos/instituicao2-laranja.png');
+    --icone--pagamentos: url('../icones/blocos/pagamento2-laranja.png');
+}
+.tema-verde:root{
+    --vermelho: rgb(3, 138, 26);
+    --fundo: #F5F5F5;
+    --cor--barra:#068d23;
+    --letra--padrao:white;
+    --botao--sim:rgb(226, 94, 17);
+    --preencha--borda:rgb(36, 216, 156);
+    --preencha--cor:rgba(236, 21, 21, 0.322);
+    --salvar--info:rgb(0, 172, 14);
+    --botao--sim--popup: rgb(177, 12, 40);
+    --barra--lateral: rgba(14, 109, 10, 0.5);
+    --preferencia--de--pagamento: rgb(2, 167, 57);
+    --cor--da--barra: white;
+    --pagamentos:rgb(7, 116, 206);
+    --icone--clientes: url('../icones/blocos/students-verde.png');
+    --icone--aniversariantes: url('../icones/blocos/instituicao2-verde.png');
+    --icone--pagamentos: url('../icones/blocos/pagamento2-verde.png');
+}
+html
+{
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+html::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+html::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--cor--barra);
+}
+/* Pergunta do cadastro*/
+.modal-confirmar.mostrar{
+    display: flex;
+}
+
+.mostrar .modal{
+    animation: modal 0.1s;
+}
+
+.modal-conta.mostrar{
+    display: flex;
+}
+
+.modal-editar.mostrar{
+    display: flex;
+}
+
+.mostrar .modal{
+    overflow-y: auto;
+    animation: modal 0.1s;
+}
+body{
+    min-width: 100vh;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    color: rgba(0, 0, 0, 0.774);
+}
+.btn{
+    text-align: center;
+    background: var(--vermelho);
+    color: white;
+    padding: 4px 8px;
+}
+.btn:hover{
+    color: var(--vermelho);
+    border: 2px solid var(--vermelho);
+    background-color: ivory;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+.barra .conteudo{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: rgb(224, 224, 224);
+}
+
+.barra .conteudo .conteudo-2{
+    min-height: 80vh;
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cad{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 8px 7px;
+}
+.clientes-recentes .titulos_contas #meses{
+    height: 30px;
+    font-size: 24px;
+    color: rgb(59, 59, 59);
+    border: none;
+    border-bottom: 2px solid rgba(10, 10, 10, 0.781);
+
+    font-weight: bold;
+}
+.clientes-recentes .titulos_contas #anos{
+  height: 30px;
+  font-size: 24px;
+  color: rgb(59, 59, 59);
+  border: none;
+  border-bottom: 2px solid rgba(10, 10, 10, 0.781);
+  font-weight: bold;
+}
+/* Animações e responsivo*/
+@media screen and (max-width: 1050px){
+    .barralateral a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 940px){
+    .modal-container2 .modal input{
+        width: 14vw;
+    }
+}
+@media screen and (max-width: 640px){
+
+    .modal-container2 .modal .pag-nome {
+        max-width: 90px;
+    }
+
+    .modal-container2 .modal {
+      	overflow-x: auto;
+        width: 100%;
+        height: 80%
+    }
+    .modal-container2 .modal .info-cliente{
+      	height: 129vh;
+    }
+    .barra{
+        width: 100vw;   
+    }
+    .barra .cabecalho {
+        background: var(--vermelho);
+        width: 100vw;
+    }
+    #list{
+        font-size: 18px;
+    }
+    
+    .btn {
+        background: white;
+        color: var(--vermelho);
+        font-size: 10px;
+    }
+    .modal-container2 .modal input{
+      	font-size: 14px;
+        width: 86vw;
+    }
+  	.novo-input {
+    	height: 199px;
+  	}
+  	.modal-container2 .modal select{
+  		width: 46vw;
+  	}
+    .modal-container2 .modal textarea{
+        width: 330px;
+    }
+    .cad {
+        justify-content: space-evenly;
+        padding: 10px 0px;
+    }
+    
+    .titulos_contas h3{
+        font-size: 10px;
+    }
+    .titulos_contas .vencido{
+        width:45px;
+    }
+    .titulos_contas .pago{
+        width:45px;
+    }
+    .titulos_contas .em_dia{
+        width:45px;
+    }
+    .titulos_contas .prazo_final{
+        width:45px;
+    }
+}
+@keyframes modal{
+    from{
+        transition: transform 0.05s;
+        transform: translateX(0) scale(0.5);    
+    }
+    to{
+        transform: translateX(10px) scale(1.2);
+    }
+}
+@keyframes rot {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}

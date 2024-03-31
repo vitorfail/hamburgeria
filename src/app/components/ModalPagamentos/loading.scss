@@ -1,0 +1,29 @@
+.modal-pag .loading{
+    top: 0px;
+    z-index: 4000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.397);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+.modal-pag .loading .c-loader {
+    animation: is-rotating 1s infinite;
+    border: 17px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 150px;
+    width: 150px;
+}
+.modal-pag .loading.mostrar{
+    display: flex;
+}
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}

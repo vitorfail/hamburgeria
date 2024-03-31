@@ -1,0 +1,168 @@
+.modal-conta{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 47000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-conta.mostrar{
+    display: flex;
+}
+.modal-conta .modal{
+    top: 0px;
+    width: 610px;
+    height: 500px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-conta .modal img{
+    align-items: center;
+    width: 100px;
+    margin-left: 140px;
+    height: 100px;
+}
+.modal-conta .modal h2{
+    display: flex;
+    padding: 5px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);
+}
+.modal-conta .modal .preencha{
+    display: none;
+    padding: 2px 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    background: var(--preencha--cor);
+    border: 2px solid var(--preencha--borda);
+    -moz-border: 2px solid var(--preencha--borda);
+	-webkit-border:  2px solid var(--preencha--borda);
+}
+.modal-conta .modal .preencha.mostrar{
+    animation: tremer .4s;
+    display: flex;
+}
+.modal-conta .modal h3{
+    display: flex;
+    padding: 2px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+}
+.modal-conta .modal .entrada{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.modal-conta .modal input{
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);;
+}
+.modal-conta .modal select{
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);
+}
+.modal-conta .modal input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.modal-conta .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-conta .modal .botoes .botao-sim{
+    padding: 5px 15px;
+}
+.modal-conta .modal .botoes .botao-sim .sim{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--botao--sim--popup);
+    color: white;
+}
+.modal-conta .modal .botoes .botao-sim .sim:hover{
+    background-color: ivory;
+    color: var(--botao--sim--popup);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim--popup);
+    -moz-border: 2px solid var(--botao--sim--popup);
+	-webkit-border:  2px solid var(--botao--sim--popup);
+    cursor: pointer;
+}
+.modal-conta .modal .botoes .botao-nao .nao{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-conta .modal .botoes .botao-nao .nao:hover{
+    background-color: ivory;
+    color: var(--botao--sim--popup);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim--popup);
+    -moz-border: 2px solid var(--botao--sim--popup);
+	-webkit-border:  2px solid var(--botao--sim--popup);
+    cursor: pointer;
+}
+.modal-conta button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}
+@keyframes tremer{
+    0% {margin-left: 0;}
+    25% {margin-left: 13px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -13px;}
+    100% {margin-left: 0;}
+}
+@media screen and (max-width: 940px){
+    .modal-conta .modal input{
+        width: 14vw;
+    }
+}
+@media screen and (max-width: 640px){
+    .modal-conta .modal .pag-nome {
+        max-width: 90px;
+    }
+    .modal-conta .modal {
+      	overflow-x: auto;
+        width: 100%;
+        height: 80%
+    }
+    .modal-conta .modal input{
+        font-size: 14px;
+      width: 86vw;
+    }
+    .modal-conta .modal select{
+        width: 46vw;
+    }
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+    font-display: block;
+}
+.clientes-recentes{
+    border-bottom: 2px solid rgba(46, 46, 46, 0.288);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+.titulos_tabela{
+    padding: 0px 2px;
+    border-bottom: 2px solid rgba(46, 46, 46, 0.288);
+    display: flex;
+    align-items: center;
+    padding: 4px 7px;
+    justify-content: space-around;
+}
+.titulos_tabela h3{
+    font-family: "Roboto";
+    font-style: inherit;
+    font-size: 27px;
+    color: rgb(71, 71, 71);
+}
+.dados-recentes{
+    max-width: 570px;
+    min-height: 54vh;
+    max-height: 54vh;
+    background: white;
+    flex: 5;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.dados-recentes{
+    height: 30vh;
+    width: 74vw;
+}
+.dados-recentes.r1{
+	flex:2;
+}
+.dados-recentes.r2{
+	flex:5;
+}
+.cadastros_recentes {
+    max-height: 38.6vh;
+    min-height: 24.5vh;
+    overflow-y: auto;
+    display: block;
+}
+.cadastros_recentes::-webkit-scrollbar{
+  	border-radius: 10px;
+    width: 7px;
+    background-color: #F5F5F5;
+}
+.cadastros_recentes::-webkit-scrollbar-thumb{
+  	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: var(--vermelho);
+}
+.cadastros_recentes::-webkit-scrollbar-track{
+  	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #F5F5F5;
+}
+.cadastros_recentes h3{
+    font-family: "Roboto";
+    font-style: inherit;
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+    padding: 5px 7px;
+}
+.cadastros_recentes .n{
+    width: 150px;
+    max-width: 150px;
+}
+.cadastros_recentes .t{
+    display: flex;
+    justify-content: center;
+    width: 136.05px;
+    margin-left: 32px;
+}
+.cadastros_recentes .s{
+    display:flex;
+    width: 81.19px;
+    justify-content: center;
+    margin-left: 70px;
+}
+.ver_todos{
+    height: 43px;
+    width: 90px;
+    font-size: 15px;
+    border: none;
+    background: var(--vermelho);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and(max-width: 640px) {
+    .dados-recentes h3{
+        font-size: 8px;
+    }
+    .cadastros_recentes .t {
+        margin-left: 10px;
+    }
+    .cadastros_recentes {
+        max-height: 206pxc;
+    }
+    .cadastros_recentes .s {
+        margin-left: 11px;
+    }
+    .cadastros_recentes .n {
+        max-width: 76.28px;
+        min-width: 76.28px;
+    }
+}

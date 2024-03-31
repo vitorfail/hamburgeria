@@ -1,0 +1,174 @@
+.cadastro_de_clientes{
+    padding: 20px 15px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cadastro_de_clientes .cadastro{
+    width: 75vw;
+    background: white;
+    margin: 20px 10px;
+    display: block;
+    justify-content: space-between;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+}
+.cadastro_de_clientes .cadastro .box {
+    border-bottom: 2px solid var(--vermelho);
+}
+.cadastro_de_clientes .cadastro .btn_baixo{
+    padding-bottom:15px;
+    padding-left: 20px;
+    display: flex;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_enviar{
+    width: 90px;
+    height: 40px;
+    display: flex;
+    padding-right: 10px;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_limpar{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    padding-right: 10px;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_enviar .enviar{
+    background: var(--vermelho);
+    text-align: center;
+    padding-top: 7px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_enviar .enviar:hover{
+    color: var(--vermelho);
+    background: white;
+    padding: 5px 4px;
+    border: 2px solid var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11s ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 14px 14px 14px 14px;
+	-moz-border-radius: 14px 14px 14px 14px;
+	-webkit-border-radius: 14px 14px 14px 14px;
+    cursor: pointer;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_limpar .limpar{
+    background: rgb(209, 206, 206);
+    text-align: center;
+    padding-top: 7px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    width: 90px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.cadastro_de_clientes .cadastro .btn_baixo .btn_limpar .limpar:hover{
+    color: var(--vermelho);
+    background: white;
+    padding: 5px 4px;
+    border: 2px solid var(--vermelho);
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11s ease-in;
+    transition: 0.11s ease-in;
+    border-radius: 14px 14px 14px 14px;
+	-moz-border-radius: 14px 14px 14px 14px;
+	-webkit-border-radius: 14px 14px 14px 14px;
+}
+.barra .conteudo .cadastro_de_clientes .cadastro .box h3{
+    padding: 20px 20px;
+    font-size: 25px;
+    color: var(--vermelho);
+}
+.dados_input{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dados_input h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(78, 77, 77);
+}
+.dados_input input{
+    border: 1px solid #cccccc;
+    width: 21vw;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 30px;
+    padding: 10px;
+}
+.dados_input input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.dados_input .dados_nome input{
+    width: 27vw;
+}
+.dados_input .dados_endereco input{
+    width: 25vw;
+}
+.dados_input .dados_uf select{
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 30px;
+    color: rgb(88, 88, 88);
+
+}
+.dados_input .dados_genero select{
+    height: 30px;
+    border: 1px solid #cccccc;
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+}
+.dados_input .dados_genero select:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.dados_input .dados_estado-civil select{
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    color: rgb(88, 88, 88);
+}
+.dados_input .dados_estado-civil select:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.dados_input .dados_notific textarea{
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    color: rgb(88, 88, 88);
+    width: 45vw;
+    height: 150px;
+    max-width: 450px;
+    max-height: 150px;
+    padding: 10px;
+}
+.dados_input .dados_notific textarea:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+@media screen and (max-width:640px){
+    .cadastro_de_clientes .cadastro{
+        width: 84vw;
+    }
+    
+    .dados_input input {
+        width: 46vw;
+    }
+}

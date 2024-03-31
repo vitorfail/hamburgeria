@@ -1,0 +1,42 @@
+.enc .Aberto{
+    background: rgb(255, 55, 55);
+    width: 134px;
+    color: white;
+    padding: 0;
+}
+.enc .Pago{
+    background: rgb(1, 131, 8);
+    width: 134px;
+    color: white;
+    padding: 0;
+}
+.enc .ultimo{
+    background: rgb(140, 143, 0);
+    width: 104px;
+    color: white;
+    padding: 0;
+}
+.enc .vencido{
+    background: rgb(255, 55, 55);
+    width: 104px;
+    color: white;
+    padding: 0;
+}
+.enc .emdia{
+    background: rgb(1, 131, 8);
+    width: 104px;
+    color: white;
+    padding: 0;
+}
+.enc .vencidoPago{
+    background: rgb(1, 131, 8);
+    width: 104px;
+    color: white;
+    padding: 0;
+}
+.enc .vencidoAberto{
+    background: rgb(255, 55, 55);
+    width: 104px;
+    color: white;
+    padding: 0;
+}

@@ -1,0 +1,16 @@
+.enc .i{
+    font-weight: 600;
+    width: 35px;
+    height: 35px;
+    color: rgb(241, 241, 241);
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: rgb(0, 121, 84);
+}
+.enc .i:hover{
+    animation: aumentar 0.3s ease;
+}
+@keyframes aumentar {
+    100% {
+        transform: scale(1.3);}
+}

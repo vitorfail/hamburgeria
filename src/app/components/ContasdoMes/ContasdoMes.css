@@ -1,0 +1,202 @@
+.barra .conteudo .conteudo-2 .notific{
+    flex: 2;
+    min-height: 54vh;
+    max-height: 54vh;
+    min-width: 40vw;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.contas_do_mes{
+    border-bottom: 2px solid rgba(46, 46, 46, 0.288);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+.contas_do_mes .meses{
+    height: 30px;
+    font-size: 24px;
+    color: rgb(59, 59, 59);
+    border: none;
+    border-bottom: 2px solid rgba(10, 10, 10, 0.781);
+    font-weight: bold;
+}
+.contas_do_mes .ver_todas{
+    text-align: center;
+    height: 43px;
+    width: 90px;
+    font-size: 15px;
+    border: none;
+    background: var(--vermelho);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contas_do_mes .meses:hover{
+    cursor: pointer;
+}
+.lista_contas .nenhum{
+    align-items: center;
+}
+.lista_contas {
+    display: flex;
+    align-items: center;
+}
+.nenhum .negativo{
+    height: 30px;
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notific .contas_do_mes .lista_contas{
+    -webkit-transition: 0.11s ease-in;
+    -moz-transition: 0.11s ease-in;
+    -o-transition: 0.11 ease-in;
+    transition: 0.11s ease-in;
+    min-height: 44vh;
+    max-height: 44vh;
+    overflow-y: auto;
+}
+.lista_contas{
+    max-height: 42.6vh;
+    min-height: 41.5vh;
+    overflow-y: auto;
+    display: block;
+}
+.lista_contas::-webkit-scrollbar{
+  	border-radius: 10px;
+    width: 7px;
+    background-color: #F5F5F5;
+}
+.lista_contas::-webkit-scrollbar-thumb{
+  	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #D62929;
+}
+.lista_contas::-webkit-scrollbar-track{
+  	-webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #F5F5F5;
+}
+.t_contas h3{
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: inherit;
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+}.t_contas{
+    display: flex;
+    align-items: center;
+    padding: 4px 7px;
+    justify-content: space-between;
+}
+.titulos_contas{
+    display: flex;
+    align-items: center;
+    padding: 4px 7px;
+    justify-content: space-between;
+}
+
+.titulos_contas h3{
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: inherit;
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+}
+.titulos_contas .em_dia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(3, 3, 3);
+    background: rgb(81, 255, 0);
+}
+.titulos_contas .vencido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 0, 0, 0.87);
+}
+.titulos_contas .pago{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 44, 189, 0.87);
+}
+.titulos_contas .prazo_final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 251, 0);
+}
+
+.cm-toggle {
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	position: relative;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 2px;
+}
+.cm-toggle:after {
+	content: '';
+	width: 40px;
+	height: 16px;
+	display: inline-block;
+	background: rgba(196, 195, 195, 0.55);
+	border-radius: 18px;
+	clear: both;
+}
+.cm-toggle:before {
+	content: '';
+	width: 12px;
+	height: 13px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.cm-toggle:checked:before {
+	left: 26px;
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.cm-toggle:checked:after {
+	background: #16a085;
+}
+.cm-toggle,
+.cm-toggle:before,
+.cm-toggle:after,
+.cm-toggle:checked:before,
+.cm-toggle:checked:after {
+	transition: ease .3s;
+	-webkit-transition: ease .3s;
+	-moz-transition: ease .3s;
+	-o-transition: ease .3s;
+}
+.blue:checked:after {
+	background: #396afc;
+}
+@media screen and (max-width: 640px){
+    .contas_do_mes h2{
+        font-size: 17px;
+    }
+    .contas_do_mes .meses {
+        font-size: 17px;
+        width: 90px;
+    }
+    .contas_do_mes .ver_todas {
+        display:none;
+    }
+}

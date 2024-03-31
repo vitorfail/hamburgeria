@@ -1,0 +1,281 @@
+.modal-pag.mostrar{
+    display: flex;
+}
+.modal-pag{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-pag .modal{
+    top: 0px;
+    width: 590px;
+    height: 500px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-pag .modal .pp{
+    display:flex;
+}
+.modal-pag .modal .pp .pref_p{
+    color: rgb(255, 255, 255);
+    background-color: var(--preferencia--de--pagamento);
+}
+.modal-pag .modal h2{
+    font-weight:700;
+    display: flex;
+    padding: 5px 5px;
+    color: rgb(114, 114, 114);
+}
+.modal-pag .modal .preencha{
+    display: none;
+    padding: 2px 2px;
+    color: rgb(0, 0, 0);
+    background: var(--preencha--cor);
+    border: 2px solid var(--preencha--borda);
+    -moz-border: 2px solid var(--preencha--borda);
+	-webkit-border:  2px solid var(--preencha--borda);
+}
+.modal-pag .modal .preencha.mostrar{
+    display: flex;
+}
+.modal-pag .modal h3{
+    display: flex;
+    padding: 2px 2px;
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+}
+.modal-pag .modal .entrada{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.modal-pag .modal textarea{
+    padding: 9px;
+    height: 85px;
+    width: 503px;
+}
+.modal-pag .modal input[type=text]{
+    border: 1px solid #cccccc;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 10px;
+    color: rgb(114, 114, 114);;
+}
+.modal-pag .modal input[type=date]{
+    border: 1px solid #cccccc;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 10px;
+    color: rgb(114, 114, 114);;
+}
+
+.modal-pag .modal select{
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 25px;
+    color: rgb(114, 114, 114);
+}
+.modal-pag .modal input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.modal-pag .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-pag .modal .botoes .botao-sim{
+    padding: 5px 15px;
+}
+.modal-pag .modal .botoes .botao-salvar{
+    padding: 5px 15px;
+}
+.modal-pag .modal .botoes .botao-sim .add{
+    background: var(--botao--sim--popup);
+    color: white;
+    padding: 5px 5px;
+    width: 150px;
+}
+.modal-pag .modal .botoes .botao-sim .add:hover{
+    background-color: ivory;
+    color: var(--botao--sim--popup);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim--popup);
+    -moz-border: 2px solid var(--botao--sim--popup);
+	-webkit-border:  2px solid var(--botao--sim--popup);
+    cursor: pointer;
+}
+
+.modal-pag .modal .botoes .botao-fechar .nao{
+}
+.modal-pag .modal .botoes .botao-fechar .nao:hover{
+    background-color: ivory;
+    color: var(--salvar--info);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--salvar--info);
+    -moz-border: 2px solid var(--salvar--info);
+	-webkit-border:  2px solid var(--salvar--info);
+    cursor: pointer;
+}
+.modal-pag .modal .botoes .botao-sim .sim{
+    background: var(--botao--sim--popup);
+    color: white;
+}
+.modal-pag .modal .botoes .botao-sim .sim:hover{
+    background-color: ivory;
+    color: var(--botao--sim--popup);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim--popup);
+    -moz-border: 2px solid var(--botao--sim--popup);
+	-webkit-border:  2px solid var(--botao--sim--popup);
+    cursor: pointer;
+}
+.modal-pag .modal .botoes .botao-nao .nao{
+}
+.modal-pag .modal .botoes .botao-nao .nao:hover{
+    background-color: ivory;
+    color: var(--botao--sim--popup);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim--popup);
+    -moz-border: 2px solid var(--botao--sim--popup);
+	-webkit-border:  2px solid var(--botao--sim--popup);
+    cursor: pointer;
+}
+.modal-pag button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}
+.modal-pag .modal .pag-titulo{
+    border-bottom: 2px solid rgb(44, 44, 44);
+    border-top: 2px solid rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-pag .modal .pag-conteiner .pag-titulo h3{
+    justify-content: center;
+    width: 171px;
+}
+.modal-pag .modal .pag-list .pag-enc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-pag .modal .pag-list .pag-enc h3{
+    justify-content: center;
+    width: 178px;
+}
+.modal-pag .modal .pag-list .pag-enc img{
+    justify-content: center;
+    width: 28px;
+    height: 32px;
+    align-items: center;
+}
+.modal-pag .modal .pag-list .pag-enc img:hover{
+    cursor: pointer;
+}
+.novo-input{
+    border-radius: 4px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background: var(--botao--sim--popup);
+    border-top: 2px solid var(--botao--sim--popup);
+    border-bottom: 2px solid var(--botao--sim--popup);
+    display: none;
+    flex-wrap: wrap;
+}
+.novo-input.mostrar{
+    display: flex
+}
+.novo-input .submit{
+    display:flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 8vw;
+}
+.novo-input .submit-data{
+    width: 10vw;
+}
+.novo-input .pro{
+    width: 14vw;
+}
+.novo-input input{
+    display:flex;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 6vw;
+}
+.novo-input button{
+    border-radius: 4px;
+    font-size: 16px;
+    height: 30px;
+    background: var(--salvar--info);
+    color:#FFFFFF;
+}
+.novo-input button:hover{
+    border-radius: 4px;
+    font-size: 16px;
+    height: 30px;
+    border: 2px solid var(--salvar--info);
+    background: #FFFFFF;
+    color:var(--salvar--info);
+    cursor: pointer;
+}
+.novo-input select{
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height:30px;
+    width: 6vw;
+    display:flex;
+}
+@media  screen and (max-width: 640px) {
+    .modal-pag .modal input {
+        width: 41vw;
+    }
+    .novo-input .pro {
+        height: 145px;
+        width: 49vw;
+    }
+    .modal-pag .modal{
+        width: 100%;
+    }
+    .modal-pag .modal select {
+        width: 41vw;
+    }
+}

@@ -1,0 +1,146 @@
+/*Pop-up comfirmação*/
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-container.mostrar{
+    display: flex;
+}
+.modal-container .modal{
+    top: 0px;
+    width: 400px;
+    height: 250px;
+    background: var(--letra--padrao);
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-container .modal img{
+    align-items: center;
+    width: 100px;
+    margin-left: 140px;
+    height: 100px;
+}
+.modal-container .modal h3{
+    padding: 15px 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);
+}
+.modal-container .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-container .modal .botoes .botao-sim{
+    padding: 5px 15px;
+}
+.modal-container .modal .botoes .botao-sim .sim:hover{
+    background-color: var(--letra--padrao);
+    color: var(--botao--sim);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim);
+    -moz-border: 2px solid var(--botao--sim);
+	-webkit-border:  2px solid var(--botao--sim);
+    cursor: pointer;
+}
+.modal-container .modal .botoes .botao-sim .sim{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--vermelho);
+    color: var(--letra--padrao);
+}
+.modal-container .modal .botoes .botao-nao .nao{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal-container .modal .botoes .botao-nao .nao:hover{
+    background-color: var(--letra--padrao);
+    color: var(--botao--sim);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim);
+    -moz-border: 2px solid var(--botao--sim);
+	-webkit-border:  2px solid var(--botao--sim);
+    cursor: pointer;
+}
+.modal-container button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}
+/*////////////////////////////////
+//////////////////////////////////
+////////////////////////////////*/
+/*Pop-up sucesso*/
+.modal-sucess{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-sucess .modal{
+    top: 0px;
+    width: 270px;
+    height: 220px;    
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-sucess .modal img{
+    margin-left: 81px;
+    width: 90px;
+    height: 90px;
+}
+.modal-sucess .modal h3{
+    padding: 12px 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);
+}
+.modal-sucess .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-sucess .modal .botoes .botao-sim{
+    height: 25px;
+    width: 70px;
+}
+.modal-sucess .modal .botoes .botao-sim .sim{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--vermelho);
+    color: var(--letra--padrao);
+}
+.modal-sucess.mostrar{
+    display: flex;
+}
+.modal-sucess button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}

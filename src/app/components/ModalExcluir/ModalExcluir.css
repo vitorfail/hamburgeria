@@ -1,0 +1,81 @@
+.modal-excluir{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-excluir.mostrar{
+    display: flex;
+}
+.modal-excluir .modal{
+    top: 0px;
+    width: 400px;
+    height: 350px;
+    background: var(--letra--padrao);
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-excluir .modal img{
+    align-items: center;
+    width: 100px;
+    margin-left: 140px;
+    height: 100px;
+}
+.modal-excluir .modal h3{
+    padding: 15px 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(114, 114, 114);
+}
+.modal-excluir .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-excluir .modal .botoes .botao-sim{
+    padding: 5px 15px;
+}
+.modal-excluir .modal .botoes .botao-sim .sim{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--vermelho);
+    color: var(--letra--padrao);
+}
+.modal-excluir .modal .botoes .botao-sim .sim:hover{
+    background-color: var(--letra--padrao);
+    color: var(--botao--sim);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim);
+    -moz-border: 2px solid var(--botao--sim);
+	-webkit-border:  2px solid var(--botao--sim);
+    cursor: pointer;
+}
+.modal-excluir .modal .botoes .botao-nao .nao:hover{
+    background-color: var(--letra--padrao);
+    color: var(--botao--sim);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--botao--sim);
+    -moz-border: 2px solid var(--botao--sim);
+	-webkit-border:  2px solid var(--botao--sim);
+    cursor: pointer;
+}
+.modal-excluir button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}

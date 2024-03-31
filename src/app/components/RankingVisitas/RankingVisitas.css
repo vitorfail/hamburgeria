@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+    font-display: block;
+}
+.ranking{
+    max-width: 570px;
+    min-height: 54vh;
+    max-height: 54vh;
+    background: white;
+    flex: 5;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ranking{
+    height: 30vh;
+    width: 74vw;
+}
+.ranking.r2{
+	flex:5;
+}
+.titulos_tabela{
+    padding: 0px 2px;
+    border-bottom: 2px solid rgba(46, 46, 46, 0.288);
+    display: flex;
+    align-items: center;
+    padding: 4px 7px;
+    justify-content: space-around;
+}
+.titulos_tabela h3{
+    font-family: "Roboto";
+    font-style: inherit;
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+}
+#ranking_visitas {
+    max-height: 40.5vh;
+    min-height: 40.5vh;
+    overflow-y: auto;
+    display: block;
+}
+#ranking_visitas h3{
+    font-family: "Roboto";
+    font-style: inherit;
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+    padding: 5px 7px;
+}
+#ranking_visitas .n{
+    width: 150px;
+    max-width: 150px;
+}
+#ranking_visitas .t{
+    display: flex;
+    justify-content: center;
+    width: 136.05px;
+    margin-left: 13vh;
+    background: var(--vermelho);
+    color: #fafafa;
+}
+#ranking_visitas .s{
+    display:flex;
+    width: 81.19px;
+    justify-content: center;
+    margin-left: 70px;
+}
+@media screen and (max-width: 640px){
+    .barra .conteudo .conteudo-2 #ranking_visitas h3 {
+        width: 105;
+        font-size: 14px;
+    }
+    .barra .conteudo .conteudo-2 #ranking_visitas .t {
+        margin-left: 0px;
+    }
+}

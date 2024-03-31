@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+    font-display: block;
+    
+}
+.modal-editar.mostrar{
+    display: flex;
+}
+.modal-editar{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(122, 122, 122, 0.63);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-editar .modal{
+    top: 0px;
+    width: 610px;
+    height: 500px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-editar .modal .pp{
+    display:flex;
+}
+.modal-editar .modal .pp .pref_p{
+    color: rgb(255, 255, 255);
+    background-color: var(--preferencia--de--pagamento);
+}
+.modal-editar .modal img{
+    align-items: center;
+    width: 100px;
+    margin-left: 140px;
+    height: 100px;
+}
+.modal-editar .modal h2{
+    display: flex;
+    padding: 5px 5px;
+    font-family: "Roboto";
+    color: rgb(114, 114, 114);
+}
+.modal-editar .modal .preencha{
+    display: none;
+    padding: 2px 2px;
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    background: var(--preencha--cor);
+    border: 2px solid var(--preencha--borda);
+    -moz-border: 2px solid var(--preencha--borda);
+	-webkit-border:  2px solid var(--preencha--borda);
+}
+.modal-editar .modal .preencha.mostrar{
+    display:flex;
+}
+.modal-editar .modal h3{
+    display: flex;
+    padding: 2px 2px;
+    font-family: "Roboto";
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+}
+.modal-editar .modal .info-cliente{
+    border-top: 2px solid rgb(44, 44, 44);
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal-editar .modal .info-cliente .bloco{
+    margin-left: 10px;
+}
+.modal-editar .modal .info-cliente .bloco input {
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 30px;
+    width: 220px;
+    padding: 10px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+.modal-editar .modal input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.modal-editar .modal .info-cliente select{
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 30px;
+    color: rgb(114, 114, 114);
+}
+.modal-editar .modal .botoes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-editar .modal .botoes button{
+    border: none;
+    font-size: 17px;
+    width: 80px;
+    height: 50px;
+}
+.modal-editar .modal .botoes .botao-sim{
+    padding: 5px 15px;
+}
+.modal-editar .modal .botoes .botao-salvar{
+    padding: 5px 15px;
+}
+.modal-editar .modal .botoes .botao-salvar .add-info{
+    background: var(--salvar--info);
+    color: white;
+}
+.modal-editar .modal .botoes .botao-salvar .add-info:hover{
+    background-color: ivory;
+    color: var(--salvar--info);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--salvar--info);
+    -moz-border: 2px solid var(--salvar--info);
+	-webkit-border:  2px solid var(--salvar--info);
+    cursor: pointer;
+}
+
+.modal-editar .modal .botoes .botao-fechar .nao{
+}
+.modal-editar .modal .botoes .botao-fechar .nao:hover{
+    background-color: ivory;
+    color: var(--salvar--info);
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    border: 2px solid var(--salvar--info);
+    -moz-border: 2px solid var(--salvar--info);
+	-webkit-border:  2px solid var(--salvar--info);
+    cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+    .modal-editar .modal {
+        overflow-x: auto;
+        width: 100%;
+        height: 80%;
+    }
+}
